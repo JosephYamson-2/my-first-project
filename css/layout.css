@@ -1,0 +1,129 @@
+/* ------------------ MAIN LAYOUT ------------------ */
+/*Explain this like how we arrange a page inside a book or frame.*/
+.page-wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-fluid {
+	width: 100%;
+	/* width: calc(100% - 40px); */
+	/* Take full width minus 40px for spacing */
+	/* margin: 20px; */
+	/* Add space around all sides (like page padding) */
+
+	/* padding: 10px 50px 50px 50px; */
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin: 10px;
+	align-items: center;
+}
+
+@media (min-width: 576px) {
+	.container {
+		margin: 50px;
+	}
+}
+
+/* ------------------ GRID SYSTEM ------------------ */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	/* Pull left padding */
+	margin-right: -10px;
+	/* Pull right padding */
+	margin-bottom: -20px;
+	/* Pull bottom padding */
+}
+
+/* Default column styles (mobile = full width) */
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+	flex: 0 0 100%;
+	max-width: 100%;
+	padding-left: 10px;
+	/* Add left gutter */
+	padding-right: 10px;
+	/* Add right gutter */
+	margin-bottom: 20px;
+	box-sizing: border-box;
+
+}
+
+@media (min-width: 768px) {
+	.col-md-1 {
+		flex: 0 0 8.33%;
+		max-width: 8.33%;
+	}
+
+	.col-md-2 {
+		flex: 0 0 16.66%;
+		max-width: 16.66%;
+	}
+
+	.col-md-3 {
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.col-md-4 {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+	}
+
+	.col-md-5 {
+		flex: 0 0 41.66%;
+		max-width: 41.66%;
+	}
+
+	.col-md-6 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.col-md-7 {
+		flex: 0 0 58.33%;
+		max-width: 58.33%;
+	}
+
+	.col-md-8 {
+		flex: 0 0 66.66%;
+		max-width: 66.66%;
+	}
+
+	.col-md-9 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.col-md-10 {
+		flex: 0 0 83.33%;
+		max-width: 83.33%;
+	}
+
+	.col-md-11 {
+		flex: 0 0 91.66%;
+		max-width: 91.66%;
+	}
+
+	.col-md-12 {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
