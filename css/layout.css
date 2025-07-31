@@ -1,5 +1,17 @@
+/* ------------------ RESET & BASE STYLES ------------------ */
+* {
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
 /* ------------------ MAIN LAYOUT ------------------ */
-/*Explain this like how we arrange a page inside a book or frame.*/
 .page-wrapper {
 	min-height: 100vh;
 	display: flex;
@@ -8,12 +20,8 @@
 
 .container-fluid {
 	width: 100%;
-	/* width: calc(100% - 40px); */
-	/* Take full width minus 40px for spacing */
-	/* margin: 20px; */
-	/* Add space around all sides (like page padding) */
-
-	/* padding: 10px 50px 50px 50px; */
+	/* width: calc(100% - 40px);
+	margin: 20px; */
 }
 
 .container {
@@ -24,7 +32,7 @@
 	align-items: center;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 	.container {
 		margin: 50px;
 	}
@@ -34,12 +42,13 @@
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -10px;
 	/* Pull left padding */
-	margin-right: -10px;
+	margin-left: -10px;
 	/* Pull right padding */
-	margin-bottom: -20px;
+	margin-right: -10px;
 	/* Pull bottom padding */
+	margin-bottom: -20px;
+
 }
 
 /* Default column styles (mobile = full width) */
@@ -66,7 +75,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.col-md-1 {
 		flex: 0 0 8.33%;
 		max-width: 8.33%;
@@ -126,4 +135,30 @@
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
+}
+
+/* ------------------ CARD ------------------ */
+.card {
+	height: 100%;
+	background-color: #fff;
+	padding: 30px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.card-title {
+	margin-bottom: 20px;
+}
+
+/* ------------------ FORMS & INPUTS ------------------ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
 }
