@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prelim Examination</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      padding-top: 40px;
+      height: 100vh;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .exam-box {
+      background-color: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .exam-box h2 {
+      margin-bottom: 5px;
+      font-size: 24px;
+      color: #333;
+      text-align: left;
+    }
+
+    .exam-box .name {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #555;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .exam-box p {
+      margin-bottom: 20px;
+      font-size: 14px;
+      color: #666;
+      text-align: left;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 10px; /* spacing between buttons */
+    }
+
+    .btn {
+      flex: 1; /* make each button take equal space */
+      padding: 10px 0;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      color: white;
+    }
+
+    .submit {
+      background-color: #28a745;
+    }
+
+    .submit:hover {
+      background-color: #218838;
+    }
+
+    .delete {
+      background-color: #dc3545;
+    }
+
+    .delete:hover {
+      background-color: #c82333;
+    }
+
+    .caution {
+      background-color: #fd7e14;
+    }
+
+    .caution:hover {
+      background-color: #e67e22;
+    }
+
+    .cancel {
+      background-color: #6c757d;
+    }
+
+    .cancel:hover {
+      background-color: #5a6268;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="exam-box">
+      <h2>Prelim Examination</h2>
+      <p class="name">Joseph P. Yamson</p>
+      <p>Button tag creates a clickable element that users can interact with.</p>
+      <div class="button-container">
+        <button class="btn submit">Submit</button>
+        <button class="btn delete">Delete</button>
+        <button class="btn caution">Caution</button>
+        <button class="btn cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
