@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <h2>Sign Up Page</h2>
+    <nav class="navbar">
+      <a href="#">Components</a>
+      <a href="#">Project</a>
+      <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+      <a href="#" class="active">Sign Up</a>
+      <a href="#">Sign In</a>
+    </nav>
+
+    <div class="dropdown">
+      <button class="btn-menu"><span class="material-symbols-outlined">menu</span></button>
+      <div class="dropdown-content">
+        <a href="#">Components</a>
+        <a href="#">Project</a>
+        <a href="#">Profile</a>
+        <a href="#">Sign Up</a>
+        <a href="#">Sign In</a>
+      </div>
+    </div>
+
+ 
+  </header>
+
+  <main class="signup-form">
+    <h3>Create an Account</h3>
+    <form action="#" method="post">
+   
+    </div>
+      <label for="id">NameID</label><br>
+      <input type="text" id="id" name="id" required><br><br>
+
+     <label for="username">User Name:</label><br>
+      <input type="text" id="username" name="username" required><br><br>
+
+      <label for="password">Password:</label><br>
+      <input type="text" id="password" name="Password" required><br><br>
+
+
+      <div class="buttons">
+        <button type="button" class="back-btn" onclick="window.location.href='profile.html'">Back</button>
+        
+      <button type="submit" class="signup-btn">Sign Up</button>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
