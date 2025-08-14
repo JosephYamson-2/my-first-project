@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple DOM Makeover</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #591414; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+    }
+    .box {
+      background-color: #f2f2f2; 
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: background-color 0.5s ease;
+    }
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box" id="box">
+  <h1 id="heading">DOM Makeover Challenge</h1>
+  <p id="paragraph">This is a simple webpage that needs some style!</p>
+  <button id="btnText">Change Text</button>
+  <button id="btnColor">Change Background</button>
+</div>
+
+<script>
+  var headings = ["DOM changes everything", "Coding is fun!"];
+  var paragraphs = ["Let's make web pages interactive!", "JavaScript can do everything!"];
+  var colors = ["red", "blue", "green", "black", "pink"];
+
+  var currentText = 0;
+  var currentColor = 0;
+
+  document.getElementById("btnText").onclick = function() {
+    document.getElementById("heading").textContent = headings[currentText];
+    document.getElementById("paragraph").textContent = paragraphs[currentText];
+
+    currentText = (currentText + 1) % headings.length;
+  };
+
+  document.getElementById("btnColor").onclick = function() {
+    var box = document.getElementById("box");
+    box.style.backgroundColor = colors[currentColor];
+
+    currentColor = (currentColor + 1) % colors.length;
+  };
+</script>
+
+</body>
+</html>
